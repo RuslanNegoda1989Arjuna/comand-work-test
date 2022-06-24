@@ -1,0 +1,87 @@
+.hero {
+  font-family: inherit;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 100%;
+
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--backgr-hero);
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../image/hero/header1_sm.jpg');
+  @include device(retina) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/hero/header1_sm@2x.jpg');
+  }
+
+  @include device(mobyle_only) {
+    max-width: 480px;
+    height: 400px;
+  }
+
+  @include device(tablet_only) {
+    width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/hero/header1_mid.jpg');
+    @include device(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../image/hero/header1_mid@2x.jpg');
+    }
+  }
+
+  @include device(desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    @include device(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../image/hero/header1_lg@2x.jpg');
+    }
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../image/hero/header1_lg.jpg');
+  }
+}
+
+.hero__title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  @include device(mobyle_only) {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @include device(tablet_only) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @include device(desktop) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

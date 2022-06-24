@@ -1,0 +1,88 @@
+.features {
+  background-color: var(--backgr-work);
+
+  @include device(mobyle_only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include device(tablet_only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include device(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.features__list {
+  @include device(tablet_only) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @include device(desktop) {
+    display: flex;
+  }
+}
+
+/* прибрати крапки в списках*/
+.features__item {
+  list-style-type: none;
+
+  @include device(mobyle_only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include device(tablet_only) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @include device(desktop) {
+    width: 270px;
+  }
+}
+
+@include device(desktop) {
+  .features__item + .features__item {
+    margin-left: 30px;
+  }
+}
+
+.features__second-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+
+  margin-bottom: 10px;
+}
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.features__bgr-icon {
+  display: flex;
+  background-color: #f5f4fa;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+}

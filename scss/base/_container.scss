@@ -1,0 +1,25 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  // mobile screen from 480px
+
+  @include device(mobyle) {
+    width: 480px;
+  }
+
+  // tablet screen 768px
+
+  @include device(tablet) {
+    width: 768px;
+  }
+
+  // desctop screen 1200px\
+
+  @include device(desktop) {
+    width: 1200px;
+  }
+}
