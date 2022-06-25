@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <!--Progect Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!--Normalise-->
     <link
       rel="stylesheet"
@@ -44,8 +47,8 @@
           >
             <svg
               class="mobyle__menu-cross-icon"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
               aria-label="Переключатель мобильного меню"
             >
               <use class="mobyle__icon-menu" href="./image/symbol-defs1.svg#icon-close_mob"></use>
@@ -54,10 +57,15 @@
           </button>
 
           <div class="mobyle__menu data-menu" data-menu>
-            <button class="mobyle__buy-now">Buy now  &#62</button>
+            <button class="mobyle__buy-now">
+              Buy now
+              <svg class="mobyla__buy-icon" width="10" height="15">
+                <use class="mobyla__more-icon" href="./image/symbol-defs1.svg#icon-more"></use>
+              </svg>
+            </button>
             <ul class="mobyle__nav">
               <li class="mobyle__nav-item">
-                <a href="./index.html" class="mobyle__link link">Home</a>
+                <a href="./index.html" class="mobyle__link mobyle__link--home link">Home</a>
               </li>
               <li class="mobyle__nav-item">
                 <a href="./portfolio.html" class="mobyle__link link">About us</a>

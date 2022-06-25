@@ -173,12 +173,37 @@ ul {
 @media screen and (max-width: 767.98px) {
   .mobyle__buy-now {
     margin-bottom: 19px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 186px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    border-color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #d41443;
+  }
+  .mobyla__buy-icon {
+    fill: #d41443;
+    margin-left: 30px;
   }
   .mobyle__menu {
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 10;
     padding-top: 60px;
     font-family: 'DM Sans';
@@ -187,7 +212,7 @@ ul {
     font-size: 14px;
     line-height: 1.29;
     color: #d41443;
-    max-width: 480px;
+    max-width: 250px;
     width: 100%;
     height: 100vh;
     background-color: #e17992;
@@ -219,6 +244,11 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
+  color: #ffffff;
+}
+
+.mobyle__link--home {
+  color: #d41443;
 }
 
 .mobyle__nav-item {
