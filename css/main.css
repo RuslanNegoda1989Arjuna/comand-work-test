@@ -150,12 +150,13 @@ ul {
   background-color: transparent;
   cursor: pointer;
   z-index: 20;
+  fill: #d41443;
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
 
 .mobyle__button:hover .mobyle__menu-cross-icon {
-  fill: var(--color-button);
+  fill: #ffffff;
 }
 
 .mobyle__icon-cross {
@@ -175,7 +176,8 @@ ul {
     margin-bottom: 19px;
     margin-right: auto;
     margin-left: auto;
-    width: 186px;
+    border: none;
+    width: 209px;
     height: 44px;
     background-color: #ffffff;
     border-radius: 22px;
@@ -194,6 +196,11 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     color: #d41443;
+    -webkit-transition: background-color var(--animation);
+    transition: background-color var(--animation);
+  }
+  .mobyle__buy-now:hover, .mobyle__buy-now:focus {
+    background-color: #ecebeb;
   }
   .mobyla__buy-icon {
     fill: #d41443;
@@ -212,7 +219,7 @@ ul {
     font-size: 14px;
     line-height: 1.29;
     color: #d41443;
-    max-width: 250px;
+    max-width: 480px;
     width: 100%;
     height: 100vh;
     background-color: #e17992;
@@ -255,15 +262,109 @@ ul {
   padding: 12px 0;
   padding-left: 20px;
   width: 100%;
+}
+
+.mobyle__nav-item:nth-child(2n + 1) {
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .mobyle__button,
+  .mobyle__buy-now {
+    margin-bottom: 19px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    width: 186px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    border-color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #d41443;
+    -webkit-transition: background-color var(--animation);
+    transition: background-color var(--animation);
+  }
+  .mobyle__buy-now:hover, .mobyle__buy-now:focus {
+    background-color: #ecebeb;
+  }
+  .mobyla__buy-icon {
+    fill: #d41443;
+    margin-left: 30px;
+  }
   .mobyle__menu {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding-top: 60px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #d41443;
+    max-width: 480px;
+    width: 100%;
+    height: 100vh;
+    background-color: #e17992;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+  .mobyle__menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: opacity 250ms ease-in-out 400ms, -webkit-transform 250ms ease-in-out 400ms;
+    transition: opacity 250ms ease-in-out 400ms, -webkit-transform 250ms ease-in-out 400ms;
+    transition: transform 250ms ease-in-out 400ms, opacity 250ms ease-in-out 400ms;
+    transition: transform 250ms ease-in-out 400ms, opacity 250ms ease-in-out 400ms, -webkit-transform 250ms ease-in-out 400ms;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mobyle__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+}
+
+.mobyle__link--home {
+  color: #d41443;
+}
+
+.mobyle__nav-item {
+  padding: 12px 0;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.mobyle__nav-item:nth-child(2n + 1) {
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
 }
 
 @media screen and (min-width: 1200px) {
